@@ -1,0 +1,18 @@
+[package]
+name = "webhook-discord-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["mario ANTUNES <mario@marioantunes.pt>"]
+description = "Lib for Discord Webhooks"
+repository = "https://github.com/rust-lang/cargo/"
+rust-version = "1.76"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.35"
+colored = "2.1.0"
+cryptify = "3.1.1"
+exitcode = "1.1.2"
+serenity = { version = "0.12.1", features = ["builder", "http", "model"] }
+tokio = { version = "1.36", features = ["macros", "rt-multi-thread"] }
